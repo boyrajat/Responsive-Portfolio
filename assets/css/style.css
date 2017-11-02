@@ -79,7 +79,7 @@ nav a {
 	text-decoration: none;
 	margin-left: 15px;
 	display: inline-block;
-	border-left: ipx solid darkgrey;
+	border-left: ipx solid #efefef;
 	padding-left: 15px;
 	line-height: 18px;
 }
@@ -96,8 +96,7 @@ nav a:first-child {
 	background: url('../images/headerback.jpg');
 	padding: 30px;
 	margin: 0 0 40px 0;
-	width: 100%;
-	max-width: 650px;
+	width: 70%;
 	float: left;
 	border: 1px solid #ddd;
 }
@@ -186,21 +185,19 @@ input[type=submit] {
 	overflow: auto;
 	position: relative;
 	float: left;
-	margin: 20px 0 25px;
+	margin: 15px;
 }
 .work:nth-child(even) {
-	margin-right: 40px;
+
 }
 .work img {
 	width: 100%;
-	height: auto;
 	border: 0 none;
 	opacity: .8;
 }
 .work iframe {
 	width: 100%;
 	opacity: .8;
-	background: lightblue;
 }
 
 .work h3 {
@@ -237,16 +234,22 @@ nav a:hover {
 @media screen and (max-width: 640px) {
 
 body {
-	max-width: 640px;
+	
+	clear: float;
 }
-
+.container {
+	width: 100%;
+}
 .masthead {
 	position: relative;
 	margin: 0 auto;
+	width: 100%;
+
 }
 
 #main-container {
 	padding-top: 0;
+
 }
 
 #name {
@@ -273,7 +276,7 @@ nav a:first-child {
 }
 
 .main-section {
-	width: 98%;
+	width: 95%;
 	margin: 0 auto;
 	margin: 15px auto 15px auto;
 	float: none;
@@ -288,7 +291,7 @@ nav a:first-child {
 
 .sidebar {
 	
-	max-width: 98%;
+	max-width: 95%;
     float: none;
     margin: 0 auto 15px auto;
     padding-top: 0;
@@ -296,16 +299,88 @@ nav a:first-child {
 }
 
 .work {
-	margin:auto;
-	width: 80%;
+	
+	width: 90%;
 	height: auto;
 	float: none;
 }
 
 .work:nth-child(even) {
-	margin: auto;
+	float: none;
+	
 }
+
 
 }
 
 /*media query for smartphone at 768px max*/
+
+
+@media screen and (min-width: 641px) and (max-width: 768px) {
+
+body {
+	
+	clear: float;
+}
+
+#main-container {
+	padding-top: 95px;
+}
+.main-section {
+	width: 95%;
+	height: auto;
+	margin: 0 auto;
+	margin: 17px;
+	padding-top: 0;
+}
+.work {
+	
+	overflow: auto;
+	position: relative;
+	margin: 25px;
+	}
+
+.sidebar {
+	
+	max-width: 95%;
+    height: auto;
+    margin: 17px;
+    padding-top: 0;
+}
+#name {
+	margin-left: 17px;
+}
+nav {
+	margin-right: 25px;
+}
+}
+
+@media screen and (min-width: 769px) and (max-width: 980px) {
+
+body {
+	clear: float;
+}
+
+.container {
+	width: 70%;
+}
+.main-section {
+	width: 58%;
+
+}
+.sidebar 
+{
+	width: 40%;
+}
+.pict {
+	width: 98%;
+	float: none;
+}
+.work {
+	margin: 0;
+	width: 100%;
+}
+
+}
+
+
