@@ -368,9 +368,10 @@ body {
 	width: 58%;
 
 }
-.sidebar 
-{
+.sidebar {
 	width: 40%;
+	min-width: 270px;
+	min-height: 207px;
 }
 .pict {
 	width: 98%;
